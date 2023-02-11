@@ -6,9 +6,9 @@ def jogar():
     print("*********************************")
 
     print("Qual nível de dificuldade?")
-    print("(1)Fácil")
-    print("(2)Médio")
-    print("(3)Difícil")
+    print("(1) - Fácil")
+    print("(2) - Médio")
+    print("(3) - Difícil")
 
     #Inicialização das variáveis
     nivel = int(input("Define o nível: "))
@@ -52,13 +52,16 @@ def jogar():
         menor   = chute < numero_secreto
 
         if(acertou):
-            print('Você acertou!')
+            print('Você acertou!\n')
             break
         else:
             if(maior):
-                print("Você errou! O seu chute foi maior que o número secreto.")
+                print("Você errou! O seu chute foi maior que o número secreto.\n")
             elif(menor):
-                print("Você errou! O seu número é menor que o número secreto.")
+                print("Você errou! O seu número é menor que o número secreto.\n")
 
-    print("O número secreto é: {}".format(numero_secreto))
+    print("O número secreto é: {}\n".format(numero_secreto))
     print("Fim de jogo!")
+
+if(__name__=="__main__"):
+    jogar()

@@ -5,8 +5,8 @@ print("********************************")
 print("Escolha seu jogo!")
 print("*********************************")
 
-print("(1)Adivinhação")
-print("(2)Forca")
+print("(1) - Adivinhação")
+print("(2) - Forca")
 
 jogo = int(input("Qual o jogo escolhido? "))
 
